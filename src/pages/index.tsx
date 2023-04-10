@@ -15,7 +15,7 @@ export default function Home() {
         ></Image>
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5 mb-2">
-            <p className="text-lg text-black font-semibold">Erin Lindford</p>
+            <p className="text-lg text-black font-semibold">Eduardo Favarato</p>
             <p className="text-slate-500 font-medium">Software Engineer</p>
           </div>
           <Link

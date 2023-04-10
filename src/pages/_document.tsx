@@ -5,10 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <div
-          id="global-header"
-          className="bg-slate-800 text-white text-center pt-2 pb-2 font-medium tracking-tight"
-        >
+        <div id="global-header" className="bg-slate-800 text-white text-center pt-2 pb-2 font-medium tracking-tight">
           React Next Typescript Template
         </div>
         <Main />
