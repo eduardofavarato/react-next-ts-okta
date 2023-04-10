@@ -36,6 +36,6 @@ export const getStaticProps: GetStaticProps = async () => {
       repositories,
       date: new Date().toISOString(),
     },
-    revalidate: 5,
+    revalidate: 60 * 60 * 1, // 1 hour
   }
 }
