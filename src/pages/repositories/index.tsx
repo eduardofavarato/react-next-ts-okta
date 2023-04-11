@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import React from 'react'
 
 type Repository = {
   name: string
@@ -10,7 +11,7 @@ type RepositoriesProps = {
   date: Date
 }
 
-export default function Repositories({ repositories, date }: RepositoriesProps) {
+const Repositories: React.FC<RepositoriesProps> = ({ repositories, date }: RepositoriesProps) => {
   return (
     <div className={`p-4`}>
       <h1 className="text-2xl lg:text-4xl text-center font-bold">Repos</h1>
@@ -39,3 +40,5 @@ export const getStaticProps: GetStaticProps = async () => {
     revalidate: 60 * 60 * 1, // 1 hour
   }
 }
+
+export default Repositories

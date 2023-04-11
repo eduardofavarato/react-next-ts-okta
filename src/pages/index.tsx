@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={`p-4`}>
       <h1 className="text-2xl lg:text-4xl text-center font-bold">Profile</h1>
@@ -30,3 +31,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
