@@ -14,8 +14,8 @@ type RepositoriesProps = {
 const Repositories: React.FC<RepositoriesProps> = ({ repositories, date }: RepositoriesProps) => {
   return (
     <div className={`p-4`}>
-      <h1 className="text-2xl lg:text-4xl text-center font-bold">Repos</h1>
-      <h1 className="text-2xl lg:text-4xl text-center font-bold">{date.toString()}</h1>
+      <h1 className="text-2xl font-bold text-center lg:text-4xl">Repos</h1>
+      <h1 className="text-2xl font-bold text-center lg:text-4xl">{date.toString()}</h1>
 
       <ul className="m-2 list-disc list-inside">
         {repositories.map((repository) => (
